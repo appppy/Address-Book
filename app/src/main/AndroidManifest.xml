@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:tools="http://schemas.android.com/tools"
+    package="jp.osaka.cherry.addressbook"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_USER_DICTIONARY"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="com.google.android.apps.photos.permission.GOOGLE_PHOTOS"/>
+
+    <application
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning"
+        android:allowBackup="true"
+        android:backupAgent=".service.BackupAgent"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.Splash"
+        android:fullBackupContent="@xml/backup_descriptor">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="キーを設定してください"/>
+
+        <provider
+            android:name=".service.history.HistoryProvider"
+            android:authorities="jp.osaka.cherry.addressbook.history.historyprovider"
+            android:exported="false" >
+        </provider>
+        <provider
+            android:name=".service.timeline.TimelineProvider"
+            android:authorities="jp.osaka.cherry.addressbook.timeline.timelineprovider"
+            android:exported="false" >
+        </provider>
+        <activity
+            android:name=".ui.view.activity.AddressActivity"
+            android:label="@string/address"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <data android:mimeType="text/*"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.files.MainActivity"
+            android:label="@string/file"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".ui.view.activity.CallActivity"
+            android:label="@string/call"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".ui.view.activity.UrlActivity"
+            android:label="@string/url"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".ui.view.activity.ArchiveActivity"
+            android:label="@string/archive"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".ui.view.activity.TrashActivity"
+            android:label="@string/trash"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".ui.view.timeline.TimelineActivity"
+            android:label="@string/timeline"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".ui.view.activity.PlaceActivity"
+            android:label="@string/place"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".ui.view.detail.ImageDetailActivity"
+            android:label=""
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.Detail">
+        </activity>
+        <activity
+            android:name=".ui.view.detail.NoteDetailActivity"
+            android:label=""
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".ui.view.detail.ImageCreateActivity"
+            android:label=""
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.Detail">
+        </activity>
+        <activity
+            android:name=".ui.view.detail.ImageEditActivity"
+            android:label=""
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.Detail">
+        </activity>
+        <activity
+            android:name=".ui.view.detail.DetailActivity"
+            android:label=""
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".ui.search.SearchActivity"
+            android:label=""
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".ui.files.SearchActivity"
+            android:label="File"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".ui.files.DetailActivity"
+            android:label="@string/file"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name=".ui.history.MainActivity"
+            android:label="@string/history"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name=".ui.history.DetailActivity"
+            android:label="@string/history"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name=".ui.view.detail.MapsActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.Map">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".MapsActivity"/>
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@layout/searchable"/>
+        </activity>
+        <service
+            android:name=".service.SimpleService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="jp.osaka.cherry.addressbook.service.ISimpleService"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name=".service.history.HistoryService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="jp.osaka.cherry.addressbook.service.history.IHistoryProxy" />
+                <action android:name="jp.osaka.cherry.addressbook.service.history.IHistoryService" />
+                <action android:name="jp.osaka.cherry.addressbook.service.history.IHistoryServiceCallback" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".service.timeline.TimelineService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="jp.osaka.cherry.addressbook.service.timeline.ITimelineProxy" />
+                <action android:name="jp.osaka.cherry.addressbook.service.timeline.ITimelineService" />
+                <action android:name="jp.osaka.cherry.addressbook.service.timeline.ITimelineServiceCallback" />
+            </intent-filter>
+        </service>
+    </application>
+</manifest>

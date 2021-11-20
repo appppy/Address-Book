@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/content_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/padding32"
+            android:paddingTop="@dimen/padding32">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="UselessParent">
+
+
+                <!-- 場所 -->
+                <LinearLayout
+                    android:id="@+id/layout_place"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/icon_place"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tint="?colorAccent"
+                        android:gravity="start"
+                        android:padding="@dimen/padding16"
+                        android:src="@drawable/ic_room_black_24dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/padding16"
+                        android:layout_marginLeft="@dimen/padding16"
+                        android:layout_marginEnd="@dimen/padding16"
+                        android:layout_marginRight="@dimen/padding16"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/place_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="@string/place"
+                            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/place_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:text="@string/no_description"
+                            android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!--&lt;!&ndash; 日付 &ndash;&gt;-->
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/layout_date"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<android.support.v7.widget.AppCompatImageView-->
+                        <!--android:id="@+id/icon_date"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:tint="?colorAccent"-->
+                        <!--android:gravity="start"-->
+                        <!--android:padding="@dimen/padding16"-->
+                        <!--android:src="@drawable/ic_event_black_24dp"/>-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_marginStart="@dimen/padding16"-->
+                        <!--android:layout_marginLeft="@dimen/padding16"-->
+                        <!--android:layout_marginEnd="@dimen/padding16"-->
+                        <!--android:layout_marginRight="@dimen/padding16"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:orientation="vertical">-->
+
+                        <!--<android.support.v7.widget.AppCompatTextView-->
+                            <!--android:id="@+id/date_title"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:ellipsize="end"-->
+                            <!--android:maxLines="1"-->
+                            <!--android:text="@string/date"-->
+                            <!--android:textAppearance="?android:attr/textAppearanceMedium"/>-->
+
+                        <!--<android.support.v7.widget.AppCompatTextView-->
+                            <!--android:id="@+id/date_text"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:ellipsize="end"-->
+                            <!--android:text="@string/no_description"-->
+                            <!--android:textAppearance="?android:attr/textAppearanceSmall"/>-->
+
+                    <!--</LinearLayout>-->
+                <!--</LinearLayout>-->
+
+
+                <!--&lt;!&ndash; ノート &ndash;&gt;-->
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/layout_item3"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<android.support.v7.widget.AppCompatImageView-->
+                        <!--android:id="@+id/icon3"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:gravity="start"-->
+                        <!--android:padding="@dimen/padding16"-->
+                        <!--android:tint="?colorAccent"-->
+                        <!--android:src="@drawable/ic_note_black_24dp"/>-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_marginEnd="@dimen/padding16"-->
+                        <!--android:layout_marginLeft="@dimen/padding16"-->
+                        <!--android:layout_marginRight="@dimen/padding16"-->
+                        <!--android:layout_marginStart="@dimen/padding16"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:orientation="vertical">-->
+
+                        <!--&lt;!&ndash;<android.support.design.widget.TextInputLayout&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:id="@+id/textInputLayout_note"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_height="wrap_content">&ndash;&gt;-->
+
+                        <!--<android.support.v7.widget.AppCompatTextView-->
+                            <!--android:id="@+id/title3"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:ellipsize="end"-->
+                            <!--android:maxLines="1"-->
+                            <!--android:text="@string/note"-->
+                            <!--android:textAppearance="?android:attr/textAppearanceMedium"/>-->
+
+                        <!--<android.support.v7.widget.AppCompatTextView-->
+                            <!--android:id="@+id/subtitle3"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:ellipsize="end"-->
+                            <!--android:text="@string/no_description"-->
+                            <!--android:textAppearance="?android:attr/textAppearanceSmall"/>-->
+
+                        <!--&lt;!&ndash;</android.support.design.widget.TextInputLayout>&ndash;&gt;-->
+                    <!--</LinearLayout>-->
+                <!--</LinearLayout>-->
+
+                <!-- call -->
+                <LinearLayout
+                    android:id="@+id/layout_item1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/icon1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="start"
+                        android:padding="@dimen/padding16"
+                        android:tint="?colorAccent"
+                        android:src="@drawable/ic_call_black_24dp"/>
+
+                    <LinearLayout
+                        android:id="@+id/item1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="@dimen/padding16"
+                        android:layout_marginLeft="@dimen/padding16"
+                        android:layout_marginRight="@dimen/padding16"
+                        android:layout_marginStart="@dimen/padding16"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/title1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="@string/tel"
+                            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/subtitle1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="@string/no_description"
+                            android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- e-mail -->
+                <LinearLayout
+                    android:id="@+id/layout_item2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/icon2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="start"
+                        android:padding="@dimen/padding16"
+                        android:tint="?colorAccent"
+                        android:src="@drawable/ic_public_black_24dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="@dimen/padding16"
+                        android:layout_marginLeft="@dimen/padding16"
+                        android:layout_marginRight="@dimen/padding16"
+                        android:layout_marginStart="@dimen/padding16"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/title2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="@string/url"
+                            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/subtitle2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="@string/no_description"
+                            android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <!--&lt;!&ndash; e-mail &ndash;&gt;-->
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/layout_item2"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<android.support.v7.widget.AppCompatImageView-->
+                        <!--android:id="@+id/icon2"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:gravity="start"-->
+                        <!--android:padding="@dimen/padding16"-->
+                        <!--android:tint="?colorAccent"-->
+                        <!--android:src="@drawable/ic_email_black_24dp"/>-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_marginEnd="@dimen/padding16"-->
+                        <!--android:layout_marginLeft="@dimen/padding16"-->
+                        <!--android:layout_marginRight="@dimen/padding16"-->
+                        <!--android:layout_marginStart="@dimen/padding16"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:orientation="vertical">-->
+
+                        <!--<android.support.v7.widget.AppCompatTextView-->
+                            <!--android:id="@+id/title2"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:ellipsize="end"-->
+                            <!--android:maxLines="1"-->
+                            <!--android:text="@string/email"-->
+                            <!--android:textAppearance="?android:attr/textAppearanceMedium"/>-->
+
+                        <!--<android.support.v7.widget.AppCompatTextView-->
+                            <!--android:id="@+id/subtitle2"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:ellipsize="end"-->
+                            <!--android:maxLines="1"-->
+                            <!--android:text="@string/no_description"-->
+                            <!--android:textAppearance="?android:attr/textAppearanceSmall"/>-->
+
+                    <!--</LinearLayout>-->
+                <!--</LinearLayout>-->
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>

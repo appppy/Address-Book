@@ -1,0 +1,14 @@
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/collection"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/padding24"
+        android:paddingRight="@dimen/padding24"
+        android:paddingStart="@dimen/padding24"
+        android:paddingEnd="@dimen/padding24"
+    />
+
+</layout>

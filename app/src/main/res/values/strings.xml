@@ -1,0 +1,168 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Address</string>
+
+    <string name="trans_name" translatable="false">list_to_detail</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="loading">loading…</string>
+
+    <!-- navigation -->
+    <string name="address">Address</string>
+    <string name="call">Call</string>
+    <string name="url">Web site</string>
+    <!--<string name="send">Send</string>-->
+    <string name="note">Note</string>
+    <string name="archive">Archive</string>
+    <string name="trash">Trash</string>
+    <string name="file">File</string>
+    <string name="history">History</string>
+    <string name="recent">Recent</string>
+    <string name="date">Date</string>
+    <string name="place">Place</string>
+    <string name="timeline">Timeline</string>
+
+    <!-- menu -->
+    <string name="open">Open</string>
+    <string name="delete">Delete</string>
+    <string name="open_from">Open from</string>
+    <string name="search">Search</string>
+    <string name="unarchive">UnArchive</string>
+    <string name="restore">Restore</string>
+    <string name="empty">Empty Trash</string>
+    <string name="sync">Sync</string>
+    <string name="list">View as List</string>
+    <string name="grid">View as Grid</string>
+    <string name="select_all">Select all items</string>
+    <string name="copy">Make a copy</string>
+    <string name="share">Share</string>
+    <string name="sort">Sort by</string>
+    <string name="swap_vert">Revers</string>
+    <string name="by_name">Name</string>
+    <string name="by_date_created">Last created</string>
+    <string name="by_date_modified">Last modified</string>
+    <string name="prev">Prev</string>
+    <string name="next">Next</string>
+    <string name="save">Save as…</string>
+    <string name="select_color">Select Color</string>
+    <string name="edit">Edit</string>
+    <string name="edit_note">Edit Note</string>
+    <string name="info">Details…</string>
+    <string name="empty_history">Empty History</string>
+    <string name="backup">Backup</string>
+    <string name="leave_history">Leave History</string>
+    <string name="open_history">Open History</string>
+
+    <string name="white">White</string>
+    <string name="red">Red</string>
+    <string name="pink">Pink</string>
+    <string name="purple">Purple</string>
+    <string name="deep_purple">Deep Purple</string>
+    <string name="indigo">Indigo</string>
+    <string name="blue">Blue</string>
+    <string name="light_blue">Light Blue</string>
+    <string name="cyan">Cyan</string>
+    <string name="teal">Teal</string>
+    <string name="green">Green</string>
+    <string name="light_green">Light Green</string>
+    <string name="lime">Lime</string>
+    <string name="yellow">Yellow</string>
+    <string name="amber">Amber</string>
+    <string name="orange">Orange</string>
+    <string name="deep_orange">Deep Orange</string>
+    <string name="brown">Brown</string>
+    <string name="blue_grey">Blue Grey</string>
+    <string name="grey">Grey</string>
+
+    <!-- content -->
+    <string name="name">Name</string>
+    <string name="tel">TEL</string>
+    <string name="email">e-mail</string>
+    <string name="created_date">Created Date</string>
+    <string name="modified_date">Modified Date</string>
+    <string name="no_description">No Description</string>
+
+    <!-- Toast -->
+    <string name="undo">UNDO</string>
+    <string name="created_item">Contact created.</string>
+    <string name="copy_item">Address copied.</string>
+    <string name="sync_item">Address synced.</string>
+    <string name="modified_item">Address modified.</string>
+    <string name="moved_to_archive_item">Address archived.</string>
+    <string name="moved_to_archive_some_items">%d address archived.</string>
+    <string name="moved_to_trash_item">Address moved to Trash.</string>
+    <string name="moved_to_trash_some_items">%d address moved to Trash.</string>
+    <string name="empty_trash_is_done">Empty trash is done.</string>
+    <string name="undo_item">Undo.</string>
+    <string name="unarchived_item">Contact unarchived.</string>
+    <string name="unarchived_some_items">%d contacts unarchived.</string>
+    <string name="restored_item">Address restored.</string>
+    <string name="restored_some_items">%d address restored.</string>
+    <string name="failed_save_file">Failed!! File name is no description.</string>
+    <string name="suceed_save_file">Saved</string>
+
+    <!-- Dialog -->
+    <string name="warning">Warning</string>
+    <string name="warning_message">Contact was more than the number that can be created.</string>
+    <string name="enter_file_name">Enter the file name.</string>
+
+    <!-- settings -->
+
+    <string name="summary">Summary</string>
+
+    <!-- search -->
+    <string name="hint_input">Enter address</string>
+    <string name="settings">Settings</string>
+    <string name="title_activity_maps">Map</string>
+
+    <!-- message -->
+    <string name="TOAST_PERMISSION_GRANTED">Permission Granted</string>
+    <string name="TOAST_PERMISSION_DENIED">Permission Denied</string>
+    <string name="geofence_transition_entered" translatable="false">Entered</string>
+    <string name="geofence_transition_exited" translatable="false">Exited</string>
+    <string name="geofence_transition_dwelled" translatable="false">Dwelled</string>
+    <string name="geofence_transition_unknown" translatable="false">Unknown transition</string>
+    <string name="geofence_transition_notification_text" translatable="false">
+        Click notification to return to app
+    </string>
+    <string name="geofence_transition_notification_title" translatable="false">
+        %1$s geofence(s) %2$s
+    </string>
+    <string name="geofence_transition_invalid_type" translatable="false">
+        Geofence transition error. Invalid type %1$d in geofences %2$s
+    </string>
+    <string name="geofence_transition_error_detail" translatable="false">
+        Geofence transition error, code %1$d message %2$s.
+    </string>
+
+    <!-- Geofence -->
+    <string name="enter">ENTER</string>
+    <string name="dwell">DWELL</string>
+    <string name="exit">EXIT</string>
+
+
+
+
+
+    <!-- Buttons strings -->
+    <string name="add_geofences">Add address</string>
+    <string name="remove_geofences">Remove address</string>
+
+    <string name="geofences_added" translatable="false">Geofences added</string>
+    <string name="geofences_removed" translatable="false">Geofences removed</string>
+
+    <!-- Error strings -->
+    <string name="geofence_not_available" translatable="false">Geofence service is not available now</string>
+    <string name="geofence_too_many_geofences" translatable="false">Your app has registered too many geofences</string>
+    <string name="geofence_too_many_pending_intents" translatable="false">
+        You have provided too many PendingIntents to the addGeofences() call
+    </string>
+    <string name="unknown_geofence_error" translatable="false">
+        Unknown error: the Geofence service is not available now
+    </string>
+
+    <!-- Transition type strings -->
+    <string name="unknown_geofence_transition">Unknown Transition</string>
+    <string name="nodescription" tools:ignore="MissingTranslation">No Description</string>
+
+</resources>

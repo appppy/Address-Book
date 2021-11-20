@@ -1,0 +1,118 @@
+<resources>
+    <string name="app_name">住所録</string>
+
+    <string name="loading">読み込み中...</string>
+
+    <string name="hint_input">住所を入力</string>
+
+    <!-- navigation -->
+    <string name="call">電話</string>
+    <string name="url">ウェブサイト</string>
+    <!--<string name="send">メール</string>-->
+    <string name="note">メモ</string>
+    <string name="archive">アーカイブ</string>
+    <string name="trash">ゴミ箱</string>
+    <string name="file">ファイル</string>
+    <string name="recent">最近使用した項目</string>
+    <string name="date">日付</string>
+    <string name="place">場所</string>
+    <string name="history">履歴</string>
+    <string name="timeline">タイムライン</string>
+    <!-- menu -->
+    <string name="open">開く</string>
+    <string name="delete">削除</string>
+    <string name="open_from">開く場所</string>
+    <string name="search">検索</string>
+    <string name="unarchive">アーカイブ解除</string>
+    <string name="restore">復元</string>
+    <string name="empty">ゴミ箱を空にする</string>
+    <string name="sync">同期する</string>
+    <string name="list">一覧表示</string>
+    <string name="grid">ギャラリー表示</string>
+    <string name="select_all">すべての項目を選択する</string>
+    <string name="copy">コピーの作成</string>
+    <string name="share">共有する</string>
+    <string name="sort">並び替え</string>
+    <string name="swap_vert">昇順/降順の切り替え</string>
+    <string name="by_name">名前順</string>
+    <string name="by_date_created">作成日順</string>
+    <string name="by_date_modified">変更日順</string>
+    <string name="prev">前</string>
+    <string name="next">後</string>
+    <string name="save">名前を付けて保存...</string>
+    <string name="select_color">色を選択する</string>
+    <string name="edit">編集する</string>
+    <string name="edit_note">メモを編集する</string>
+    <string name="info">詳細を表示する</string>
+    <string name="empty_history">履歴を空にする</string>
+    <string name="backup">履歴を残す</string>
+    <string name="leave_history">履歴を残す</string>
+    <string name="open_history">履歴を開く</string>
+
+    <!-- content -->
+    <string name="name">名前</string>
+    <string name="tel">電話番号</string>
+    <string name="email">メールアドレス</string>
+    <string name="created_date">作成日</string>
+    <string name="modified_date">変更日</string>
+    <string name="no_description">記述なし</string>
+
+    <!-- Toast -->
+    <string name="undo">元に戻す</string>
+    <string name="created_item">1件を作成しました</string>
+    <string name="copy_item">コピーしました</string>
+    <string name="sync_item">連絡先を同期しました</string>
+    <string name="modified_item">1件を編集しました</string>
+    <string name="moved_to_archive_item">1件をアーカイブに移動しました</string>
+    <string name="moved_to_archive_some_items">%d件をアーカイブに移動しました</string>
+    <string name="moved_to_trash_item">1件をゴミ箱に移動しました</string>
+    <string name="moved_to_trash_some_items">%d件をゴミ箱に移動しました</string>
+    <string name="empty_trash_is_done">ゴミ箱を空にしました</string>
+    <string name="undo_item">元に戻しました</string>
+    <string name="unarchived_item">1件をアーカイブ解除しました</string>
+    <string name="unarchived_some_items">%d件をアーカイブ解除しました</string>
+    <string name="restored_item">1件を復元しました</string>
+    <string name="restored_some_items">%d件を復元しました</string>
+    <string name="failed_save_file">保存に失敗しました\nファイル名が入力されていません</string>
+    <string name="suceed_save_file">保存しました</string>
+
+    <!-- Dialog -->
+    <string name="warning">警告</string>
+    <string name="warning_message">作成可能な数を超えています</string>
+    <string name="enter_file_name">ファイル名を入力してください</string>
+    <string name="address">住所</string>
+    <string name="add_geofences">住所を追加</string>
+    <string name="settings">設定</string>
+    <string name="summary">概要</string>
+    <string name="amber">アンバー</string>
+    <string name="blue">青</string>
+    <string name="blue_grey">ブルーグレー</string>
+    <string name="brown">茶</string>
+    <string name="cyan">シアン</string>
+    <string name="deep_orange">濃いオレンジ</string>
+    <string name="deep_purple">濃いパープル</string>
+    <string name="green">緑</string>
+    <string name="grey">グレー</string>
+    <string name="indigo">インディゴ</string>
+    <string name="lime">ライム</string>
+    <string name="orange">オレンジ</string>
+    <string name="pink">ピンク</string>
+    <string name="purple">紫</string>
+    <string name="red">赤</string>
+    <string name="teal">ティール</string>
+    <string name="white">白</string>
+    <string name="yellow">黄</string>
+    <string name="light_blue">明るい青</string>
+    <string name="light_green">明るい緑</string>
+    <string name="dwell">滞在</string>
+    <string name="enter">入場</string>
+    <string name="exit">出場</string>
+    <string name="remove_geofences">住所を削除</string>
+    <string name="TOAST_PERMISSION_DENIED">権限が拒否されました</string>
+    <string name="TOAST_PERMISSION_GRANTED">権限が付与されました</string>
+    <string name="navigation_drawer_close">ナビゲーションメニューを閉じる</string>
+    <string name="navigation_drawer_open">ナビゲーションメニューを開く</string>
+    <string name="title_activity_maps">地図</string>
+    <string name="unknown_geofence_transition">不明</string>
+
+</resources>
