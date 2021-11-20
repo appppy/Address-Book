@@ -19,15 +19,6 @@ Androidアプリを作成したい方が参考として使用することを想�
 
 # どのように、「Address-Book」を使うか？
 
-以下のapi_keyの値(value)を取得し、設定してください。
-
-・AndroidManifest.xml
-```
-         <meta-data
-            android:name="com.google.android.backup.api_key"
-            android:value="キーを設定してください" />
-```
-
 以下のAPPLICATION_IDの値(value)を取得し、設定してください。
 
 ・AndroidManifest.xml
